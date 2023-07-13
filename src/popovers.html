@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap5</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h3>Popover Positioning</h3>
+        <p>Click on the links to see the popover in action:</p>
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="top" data-bs-content="Content">Top</a>
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-content="Content">Bottom</a>
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="left" data-bs-content="Content">Left</a>
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="right" data-bs-content="Content">Right</a>
+      </div>
+
+      <div class="container mt-3">
+        <h3>Hoverable Popover</h3>
+        
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Popover text">Hover over me</a>
+      </div>
+      
+      <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+      </script>
+</body>
+</html>
