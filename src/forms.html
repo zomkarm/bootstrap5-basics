@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap5</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-3">
+        <h2 class="text-center">Form Example</h2>
+        <form>
+            <div class="mb-3 mt-3">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Firstname"/>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Lastname"/>                        
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="username" class="form-label">Username :</label>
+                <input type="text" class="form-control-plaintext" name="username" placeholder="Enter username" >
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email :</label>
+                <input type="text" class="form-control" name="email" placeholder="Enter email"  >
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="pwd" class="form-label">Password :</label>
+                <input type="password" class="form-control" name="password" placeholder="Enter password"  >
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="comment" class="form-label">Comments :</label>
+                <textarea class="form-control" rows="3" id="comment" name="text"></textarea>
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="colorpicker" class="form-label">Select dashboard color :</label>
+                <input type="color" class="form-control form-control-color" value="#CCCCCC">
+            </div>
+            <label for="sel1" class="form-label">Select list (select one):</label>
+            <select class="form-select" id="sel1" name="sellist1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <br>
+            
+            <label for="sel2" class="form-label">Mutiple select list (hold shift to select more than one):</label>
+            <select multiple class="form-select" id="sel2" name="sellist2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select><br>
+
+            <label for="browser" class="form-label">Choose your browser from the list:</label>
+            <input class="form-control" list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist><br>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                <label class="form-check-label" for="check1">Option 1</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                <label class="form-check-label" for="check2">Option 2</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" disabled>
+                <label class="form-check-label">Option 3</label>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                <label class="form-check-label" for="radio1">Option 1</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                <label class="form-check-label" for="radio2">Option 2</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" disabled>
+                <label class="form-check-label">Option 3</label>
+            </div><br>
+
+            <div class="mb-3 mt-3">
+                <label for="customRange" class="form-label">Custom range</label>
+    <input type="range" class="form-range" id="customRange" name="points" step="8" min="0" max="14">
+            </div>
+
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                <label class="form-check-label" for="mySwitch">Dark Mode</label>
+            </div><br>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="Username" name="usrname">
+              </div>
+          
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Your Email" name="email">
+                <span class="input-group-text">@example.com</span>
+            </div><br>
+
+            <!-- Multiple inputs -->
+            <div class="input-group mb-3">
+                <span class="input-group-text">Person</span>
+                <input type="text" class="form-control" placeholder="First Name">
+                <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+
+            <!-- Multiple addons / help text -->
+            <div class="input-group mb-3">
+                <span class="input-group-text">One</span>
+                <span class="input-group-text">Two</span>
+                <span class="input-group-text">Three</span>
+                <input type="text" class="form-control">
+            </div><br>
+            <div class="input-group mb-3">
+                <div class="input-group-text">
+                <input type="radio">
+                </div>
+                <input type="text" class="form-control" placeholder="Some text">
+            </div>
+
+            <!-- Multiple inputs -->
+            <div class="input-group mb-3">
+                <div class="input-group-text">
+                <input type="checkbox">
+                </div>
+                <input type="text" class="form-control" placeholder="Some text">
+            </div><br>
+
+            <div class="input-group mb-3 mt-3">
+                <button class="btn btn-outline-primary" type="button">Basic Button</button>
+                <input type="text" class="form-control" placeholder="Some text">
+              </div>
+            
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search">
+                <button class="btn btn-success" type="submit">Go</button> 
+              </div>
+            
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Something clever..">
+                <button class="btn btn-primary" type="button">OK</button> 
+                <button class="btn btn-danger" type="button">Cancel</button> 
+            </div>
+
+            <div class="input-group mt-3 mb-3">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Link 1</a></li>
+                  <li><a class="dropdown-item" href="#">Link 2</a></li>
+                  <li><a class="dropdown-item" href="#">Link 3</a></li>
+                </ul>
+                <input type="text" class="form-control" placeholder="Username">
+              </div>
+
+              <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                <label for="email">Email</label>
+              </div>
+              <div class="form-floating mt-3 mb-3">
+                <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                <label for="pwd">Password</label>
+            </div>
+
+            <div class="form-floating mb-3 mt-3">
+                <select class="form-select" id="sel1" name="sellist">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+                <label for="sel1" class="form-label">Select list (select one):</label>
+              </div>
+                
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                  </label>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary mb-2 ">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
